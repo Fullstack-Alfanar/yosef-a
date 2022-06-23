@@ -1,7 +1,5 @@
 
 import './App.css';
-// import MyForm from './components/form/MyForm';
-// import MyImage from './components/image/MyImage';
 
 import React, { useState } from 'react';
 
@@ -24,14 +22,9 @@ function App() {
 
             <h5>Please type a valid color:</h5>
 
-            <input id='in' type="text" />
-
-            <button onClick={() => {
-              let input = document.getElementById("in");
-              let val = input.value;
-              console.log(val);
-              setColor(val);
-            }}>Change Color</button>
+            <input id='in' type="text" onChange={(e) => {
+              setColor(e.target.value);
+            }} />
 
           </div>
           <div style={{
