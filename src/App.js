@@ -1,16 +1,20 @@
 
 import './App.css';
+
 import Shoes from './components/Shoes';
 import Timer from './components/Timer';
+
 
 
 function App() {
 
   return (
+
     <>
       <header >
         <h2> Shib👟 Shib👟 </h2>
         <Timer />
+
       </header>
       <div className="App">
         <Shoes name="NIKE" size={34} price={"250"} imgSrc={"https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/c6f5524c-82f9-45d8-b9ff-9dec248dcc65/air-flight-lite-mid-shoe-tr22fR.png"} />
