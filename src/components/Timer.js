@@ -10,7 +10,9 @@ function Timer() {
             let now = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds() + 1}`
             setTime(now);
         }, 1000);
-    });
+     
+    },[]);
+    
     return (
         <>
             <h2>{time}</h2>
