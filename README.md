@@ -16,7 +16,7 @@ if the HomeWork is a page that needs to be viewed then the branch will be merged
 you can view this page on this [link](https://yosef-a-react.herokuapp.com/)
 ## Usage
 
-1. Copy the reposetory URL or download the zip file
+1. Copy the repository URL or download the zip file
 2. open in Visual Studio Code
 3. make sure all the node packages are installed 
 4. start the react project
