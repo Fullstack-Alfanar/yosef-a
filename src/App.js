@@ -1,22 +1,26 @@
 
 import './styles/App.scss';
-import ShoePage from './pages/ShoePage';
 import Timer from './components/Timer';
+import { Link } from 'react-router-dom';
+import AppRouter from './router/AppRouter';
 
 
 
 function App() {
 
   return (
-
     <>
       <header >
         <h2> Shib👟 Shib👟 </h2>
-        <Timer />
+          <Timer />
+        <nav className='navBar'>
+          <Link to={"/"} className='link'>Shop</Link>
+          <Link to={"/employees"} className='link'>Employees</Link>
+        </nav>
 
       </header>
       <div className="App">
-        <ShoePage/>
+        <AppRouter />
       </div>
     </>
   );
