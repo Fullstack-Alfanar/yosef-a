@@ -21,6 +21,11 @@ function AddShoePage() {
         let validImg = !(imageURLIn.value === null) && !(imageURLIn.value === "")
 
         if (validName && validSize && validPrice && validImg) {
+            nameIn.style.borderColor = "";
+            sizeIn.style.borderColor = "";
+            priceIn.style.borderColor = "";
+            imageURLIn.style.borderColor = "";
+            
             let shoeList = [];
 
             let shoeObj = {
@@ -37,7 +42,10 @@ function AddShoePage() {
             localStorage.setItem("shoeListStorage", JSON.stringify(shoeList));
             navigate("/");
         } else {
-
+            (!validName) ? nameIn.style.borderColor = "red" : nameIn.style.borderColor = "";
+            (!validSize) ? sizeIn.style.borderColor = "red" : sizeIn.style.borderColor = "";
+            (!validPrice) ? priceIn.style.borderColor = "red" : priceIn.style.borderColor = "";
+            (!validImg) ? imageURLIn.style.borderColor = "red" : imageURLIn.style.borderColor = "";
         }
 
     }
