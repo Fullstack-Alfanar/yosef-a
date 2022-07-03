@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import AddShoe from "../pages/AddShoe";
+import AddShoePage from "../pages/AddShoePage";
 import ShoePage from "../pages/ShoePage";
 function AppRouter() {
     return useRoutes([
@@ -14,7 +14,7 @@ function AppRouter() {
         },
         {
             path: "/addShoe",
-            element: <AddShoe />
+            element: <AddShoePage />
         },
         {
             path: "/addEmployee",

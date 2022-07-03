@@ -1,7 +1,7 @@
 import "../styles/AddShoePage.scss";
 import { useNavigate } from 'react-router-dom';
 
-function AddShoe() {
+function AddShoePage() {
     const navigate = useNavigate();
 
     const saveNewShoe = () => {
@@ -68,4 +68,4 @@ function AddShoe() {
     </>
 }
 
-export default AddShoe;
+export default AddShoePage;
