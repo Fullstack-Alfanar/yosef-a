@@ -18,3 +18,8 @@
 .addLink:active {
     transform: scale(0.9);
 }
+
+.shoesContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
