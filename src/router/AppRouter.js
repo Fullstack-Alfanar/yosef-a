@@ -1,4 +1,5 @@
 import { useRoutes } from "react-router-dom";
+import AddShoe from "../pages/AddShoe";
 import ShoePage from "../pages/ShoePage";
 function AppRouter() {
     return useRoutes([
@@ -9,7 +10,15 @@ function AppRouter() {
         {
             path: "/employees",
             // temporary
-            element: <><h1>Employee</h1></> 
+            element: <><h1>Employee</h1></>
+        },
+        {
+            path: "/addShoe",
+            element: <AddShoe />
+        },
+        {
+            path: "/addEmployee",
+            element: <><h1>AddEmployee</h1></>
         }
     ]);
 }
