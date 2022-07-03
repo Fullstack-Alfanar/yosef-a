@@ -19,3 +19,25 @@ header{
   
 }
 
+.navBar{
+  display: flex;
+  align-items: center;
+  .link{
+    width: 76px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .link:hover{
+    transform: scale(1.1);
+  }
+  .link:active{
+    transform: scale(0.9);
+  }
+}
+
