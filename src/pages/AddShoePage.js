@@ -1,4 +1,4 @@
-import "../styles/AddShoePage.scss";
+import "../styles/AddForm.scss";
 import { useNavigate } from 'react-router-dom';
 
 function AddShoePage() {
@@ -25,7 +25,7 @@ function AddShoePage() {
             sizeIn.style.borderColor = "";
             priceIn.style.borderColor = "";
             imageURLIn.style.borderColor = "";
-            
+
             let shoeList = [];
 
             let shoeObj = {

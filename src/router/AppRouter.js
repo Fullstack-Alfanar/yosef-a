@@ -1,6 +1,8 @@
 import { useRoutes } from "react-router-dom";
 import AddShoePage from "../pages/AddShoePage";
 import ShoePage from "../pages/ShoePage";
+import EmployeesPage from "../pages/EmployeesPage"
+import AddEmployeesPage from "../pages/AddEmployeePage"
 function AppRouter() {
     return useRoutes([
         {
@@ -9,8 +11,7 @@ function AppRouter() {
         },
         {
             path: "/employees",
-            // temporary
-            element: <><h1>Employee</h1></>
+            element: <EmployeesPage />
         },
         {
             path: "/addShoe",
@@ -18,7 +19,7 @@ function AppRouter() {
         },
         {
             path: "/addEmployee",
-            element: <><h1>AddEmployee</h1></>
+            element: <AddEmployeesPage />
         }
     ]);
 }
